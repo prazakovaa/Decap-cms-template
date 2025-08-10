@@ -1,3 +1,7 @@
+.nc-error-boundary {
+  display: none !important;
+}
+
 h1 {
     color: red;
 }
