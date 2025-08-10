@@ -20,5 +20,12 @@
     <footer>
         <p>&copy; 2025</p>
     </footer>
+
+    <script>
+    const params = new URLSearchParams(window.location.hash.slice(1));
+    if (params.has("invite_token")) {
+        window.location.href = `/admin/#invite_token=${params.get("invite_token")}`;
+    }
+    </script>
 </body>
 </html>
