@@ -4,18 +4,19 @@ backend:
   # name: github
   # repo: surjithctly/neat-starter
 
-media_folder: "static/uploads"
-public_folder: "/static/uploads"
+media_folder: "uploads"
+public_folder: "/uploads"
 
+local_backend: true
 
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "about"
+    label: "About"
     folder: "src/about"
     create: true
     slug: "{{slug}}"
-    files:
+    fields:
       - label: "About"
         name: "about"
         folder: "src/about"
@@ -25,8 +26,8 @@ collections:
           - { label: "Title", name: "title", widget: "string", required: true }
           - { label: "Body", name: "body", widget: "markdown", required: true }
           - { label: "Image", name: "image", widget: "image", required: false } 
-  - name: "pages"
-    label: "Pages"
+  - name: "news"
+    label: "News"
     folder: "src/news"
     create: true
     slug: "{{slug}}"

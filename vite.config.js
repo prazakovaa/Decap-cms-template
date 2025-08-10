@@ -5,10 +5,10 @@ export default {
         admin: 'src/admin/admin.js'
       },
       output: {
-        entryFileNames: 'static/js/[name].bundle.js'
+        entryFileNames: 'js/[name].bundle.js'
       }
     },
-    outDir: 'src',
+    outDir: 'src/static',
     emptyOutDir: false
   }
 };
