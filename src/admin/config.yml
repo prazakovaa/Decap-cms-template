@@ -4,11 +4,8 @@ backend:
   # name: github
   # repo: surjithctly/neat-starter
 
-media_folder: "uploads"
-public_folder: "/uploads"
-
-local_backend: true
-
+media_folder: "src/static/uploads"
+public_folder: "/static/uploads"
 
 collections:
   - name: "about"
@@ -31,14 +28,4 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: true }
       - { label: "Image", name: "image", widget: "image", required: false } 
       - { label: "File", name: "file", widget: "file", required: false } #adding file (download pdf)
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        required: true
-        options:
-          - Important
-          - Question
-          - Blog
-          - Other
-
-
+      - { label: "Category", name: "category", widget: "select", required: true, options: ["Important", "Question", "Blog", "Other"] }
