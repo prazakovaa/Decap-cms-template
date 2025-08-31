@@ -5,12 +5,12 @@ export default defineConfig({
   plugins: [
     visualizer({
       filename: './dist/bundle-visualizer.html', // kam se uloží report
-      open: true, // automaticky otevře po buildu
+      open: false, // automaticky otevře po buildu
     }),
   ],
   build: {
-    rollupOptions: {
-      input: {
+    rollupOptions: { 
+      input: { 
         admin: 'src/admin/admin.js',
       },
       output: {
