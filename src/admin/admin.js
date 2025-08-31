@@ -1,3 +1,3 @@
-import CMS from "decap-cms";
+//import CMS from "decap-cms";
 
-CMS.init();
+//MS.init();
